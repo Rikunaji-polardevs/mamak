@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SITUS_RESMI_MAKAN_RIOT</title>
+<style>
+    /* CSS JADUL STYLE */
+    body {
+        background-color: #008080; 
+        background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+        color: white;
+        font-family: "Times New Roman", serif;
+    }
+
+    .bingkai-utama {
+        background-color: #c0c0c0; 
+        width: 750px;
+        border: 10px groove #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        padding: 15px;
+    }
+
+    /* HEADER BARU DENGAN FOTO MAKANAN */
+    .header-kontainer {
+        background-color: #800000;
+        border: 5px double #ffffff;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .foto-header-utama {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 4px solid #000000;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: #ffff00;
+        margin: 0;
+        padding: 5px;
+        text-decoration: underline;
+        font-family: "Comic Sans MS", cursive;
+        text-shadow: 2px 2px #000000;
+    }
+
+    /* TABEL MENU */
+    table {
+        background-color: white;
+        border: 5px solid black;
+        width: 100%;
+    }
+
+    td {
+        border: 2px solid #808080;
+        text-align: center;
+        padding: 10px;
+        width: 33%;
+    }
+
+    img.produk {
+        border: 3px solid black;
+        width: 180px;
+        height: 130px;
+    }
+
+    /* TOMBOL KLASIK */
+    .tombol-beli {
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        border: 4px outset #eeeeee;
+        margin-top: 5px;
+    }
+
+    .tombol-beli:active {
+        border: 4px inset #eeeeee;
+    }
+
+    .warna1 { background-color: #ff0000; color: white; }
+    .warna2 { background-color: #00ff00; color: black; }
+    .warna3 { background-color: #ffff00; color: black; }
+    .warna4 { background-color: #00ffff; color: black; }
+    .warna5 { background-color: #ff00ff; color: white; }
+    .warna6 { background-color: #ffffff; color: black; }
+    .warna7 { background-color: #ff8000; color: white; }
+    .warna8 { background-color: #0000ff; color: white; }
+    .warna9 { background-color: #00ff80; color: black; }
+
+    .box-angka {
+        background-color: black;
+        color: #00ff00;
+        font-size: 35px;
+        padding: 10px;
+        border: 4px double white;
+        margin-top: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+</head>
+<body>
+
+<center>
+    <marquee bgcolor="yellow" width="750" scrollamount="10" style="border: 2px solid black;">
+        <font color="red"><b>+++ MENU SPESIAL HARI INI: NASI GORENG DAN AYAM GEPREK +++ PESAN SEKARANG SEBELUM KEHABISAN! +++</b></font>
+    </marquee>
+</center>
+
+<div class="bingkai-utama">
+    
+    <div class="header-kontainer">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" class="foto-header-utama" alt="Banner Makanan">
+        <h1>-- WARUNG MKN_RIOT --</h1>
+        <p style="color: white; margin: 0;"><i>"Pedesnya Bikin Ribut, Enaknya Gak Ada Obat!"</i></p>
+    </div>
+
+    <center><p><b>SILAHKAN PILIH MENU ANDA:</b></p></center>
+
+    <table border="1">
+        <tr>
+            <td>
+                <img src="https://awsimages.detik.net.id/community/media/visual/2023/08/18/resep-nasi-goreng-jawa_169.jpeg?w=600&q=90" class="produk">
+                <br><b>NASI GORENG</b><br>
+                Rp 25.000<br>
+                <button class="tombol-beli warna1" onclick="pesan('Nasi Goreng')">BELI</button>
+            </td>
+            <td>
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300" class="produk">
+                <br><b>AYAM GEPREK</b><br>
+                Rp 22.000<br>
+                <button class="tombol-beli warna2" onclick="pesan('Ayam Geprek')">BELI</button>
+            </td>
+            <td>
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" class="produk">
+                <br><b>BURGER</b><br>
+                Rp 35.000<br>
+                <button class="tombol-beli warna3" onclick="pesan('Burger')">BELI</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=300" class="produk">
+                <br><b>MIE GORENG</b><br>
+                Rp 30.000<br>
+                <button class="tombol-beli warna4" onclick="pesan('Mie Goreng')">BELI</button>
+            </td>
+            <td>
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300" class="produk">
+                <br><b>PIZZA</b><br>
+                Rp 55.000<br>
+                <button class="tombol-beli warna5" onclick="pesan('Pizza')">BELI</button>
+            </td>
+            <td>
+                <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=300" class="produk">
+                <br><b>DIMSUM</b><br>
+                Rp 20.000<br>
+                <button class="tombol-beli warna6" onclick="pesan('Dimsum')">BELI</button>
+            </td>
+        </tr>
+    </table>
+
+    <center>
+        <div class="box-angka">
+            PESANAN: <span id="angka">0</span>
+        </div>
+        <br>
+        <img src="https://api.visitor-badge.io/api/combined?path=https%3A%2F%2Fmknriot.com&labelColor=%23000000&countColor=%23263238&style=flat-square" alt="visitor counter">
+        <p style="font-size: 10px;">Copyright &copy; 2004 MKN_RIOT Corp. <br> Best viewed in 800x600 resolution</p>
+    </center>
+</div>
+
+<script>
+    var hitung = 0;
+    function pesan(item) {
+        alert("Pesanan " + item + " berhasil ditambahkan!");
+        hitung = hitung + 1;
+        document.getElementById('angka').innerHTML = hitung;
+    }
+</script>
+
+</body>
+</html>
